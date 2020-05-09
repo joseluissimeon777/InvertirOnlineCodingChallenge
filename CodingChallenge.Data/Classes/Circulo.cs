@@ -7,7 +7,7 @@ namespace CodingChallenge.Data.Classes
 {
     public class Circulo : FormaGeometrica
     {
-        private decimal _diametro { get; set; }
+        private decimal _diametro { get; set; } 
 
         public Circulo(decimal diametro)
         {
