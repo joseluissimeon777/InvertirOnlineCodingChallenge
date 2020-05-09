@@ -1,7 +1,7 @@
 # InvertirOnlineCodingChallenge
 
 
-# IMPLEMENTAR NUEVO IDIOMA
+## IMPLEMENTAR NUEVO IDIOMA
 
 Agregar nuevo archivo de recurso en la carpeta Resources 
 
@@ -11,7 +11,7 @@ Dentro de él fijar el diccionario de palabras o frases que se correspondan con 
 se encuentra en la misma carpeta al igual que está hecho con el inglés
 
 
-# NUEVA FIGURA GEOMETRICA
+## NUEVA FIGURA GEOMETRICA
 
 Agregar nueva clase que herede de la clase abstracta FormaGeometrica 
 
