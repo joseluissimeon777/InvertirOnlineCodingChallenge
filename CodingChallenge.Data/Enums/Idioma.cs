@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.Enums
 {
-    public enum Idioma
+    public static class Idioma
     {
-        Castellano =1, 
-        Ingles
+        public const string Castellano = "es-AR";
+        public const string Ingles = "en-US";
     }
 }

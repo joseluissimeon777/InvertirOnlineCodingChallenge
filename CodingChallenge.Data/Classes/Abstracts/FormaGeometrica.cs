@@ -13,9 +13,8 @@ namespace CodingChallenge.Data.Classes.Abstracts
         public abstract decimal CalcularPerimetro();
         public abstract string TraducirForma(int cantidad);
 
-        public static string Imprimir(List<FormaGeometrica> formas , int idioma)
+        public static string Imprimir(List<FormaGeometrica> formas)
         {
-            ConfigurarIdioma(idioma);
             var sb = new StringBuilder();
 
             if (!formas.Any())
@@ -72,19 +71,6 @@ namespace CodingChallenge.Data.Classes.Abstracts
             result.AppendFormat(Resources.Res.Reporte_PIE_TOTAL_AREA+" ", areaTotal);
 
             return result.ToString();
-        }
-
-        private static void ConfigurarIdioma(int id)
-        {
-            switch (id)
-            {
-                case (int)Idioma.Castellano:
-                    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es-AR");
-                    break;
-                case (int)Idioma.Ingles:
-                    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
-                    break;
-            }
         }
 
     }
